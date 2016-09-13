@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(../img/bg.jpg) repeat-x;
+    background-color: rgb(26,40,88);
+    font-family: arial;
+    min-height: 1000px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.main {
+    width: 950px;
+    margin: auto;
+}
+
+.header {
+    height: 200px;
+    background: url(../img/header_bg.jpg) no-repeat;
+}
+
+.logo {
+    padding: 20px 0 0 275px;
+}
+
+.main_content {
+    min-height: 700px;
+    width: 787px;
+    margin: auto;
+    background: url(../img/container_center_bg.jpg) repeat-y;
+}
+.center_content {
+    min-height: inherit;
+    background: url(../img/container_top_bg.jpg) no-repeat;
+}
+
+.menu {
+    width: 600px;
+    margin-left: 240px;
+}
+
+.menu::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.menu li {
+    list-style: none;
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    height: 30px;
+    width: 130px;
+    background: url(../img/bt.gif) no-repeat;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    line-height: 30px;
+}
+
+.menu li a:hover, .menu li a.active {
+    background: url(../img/bt_a.gif) no-repeat;
+}
+
+.welcome {
+    width: 500px;
+}
+
+.welcome::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.title {
+    padding-top: 20px;
+    margin-left: 40px;
+    border-bottom: 1px dashed black;
+}
+
+.img_wrapper {
+    float: left;
+    margin: 10px 30px;
+}
+.products {
+    width: 90%;
+}
+.img_container {
+    display: flex;
+    margin: 15px 20px;
+}
+.img_container div {
+    margin: 0px 10px;
+    padding-left: 15px;
+    border: 1px solid #42aaff;
+    border-image-source: url("../img/i_divider.gif");
+    border-image-width: 69px 0px 0px 1px;
+}
+.img_container div:first-child {
+    border: none;
+}
+.products > div:last-child{
+    text-align: justify;
+    margin: 15px 0px 15px 40px;
+}
+.news{
+    width: 95%;
+}
+.news_images{
+    display: flex;
+    margin: 2% 0px 0px 5%;
+}
+.news_info{
+    display: inherit;
+    margin-left: 3%;
+}
+.news_images .news_info > div + div{
+    text-align: justify;
+    margin-left: 5%;
+}
+.news_images .news_info > div + div > h4 {
+    color: #a74423;
+}
+.footer img{
+    margin: 1% 6%;
+}
+.footer_bg{
+    height: 58px;
+    background: url(../img/footer_bg.jpg) no-repeat;
+}
+
